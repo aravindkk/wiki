@@ -1,0 +1,8 @@
+$(document).ready(function(){
+ $.get('/wiki/i/1',
+       function( data ) {
+  var p = '<p>' + data.section1_id + '</p>' + '<p>' + data.user_id + '</p>' + '<p>' + data.revision + '</p>' + '<p>' + data.section1 + '</p>' + '<p>' + data.section2 + '</p>' + '<p>' + data.section3 + '</p>' + '<p>' + data.section4 + '</p>' + '<p>' + data.section5 + '</p>';
+  $( "result" ).html( data );
+  alert( "Load was performed." ); 
+      );
+});
